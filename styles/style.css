@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/*header样式*/
+#header {
+	height: 105px;
+	background: url(../images/headerbg.png) repeat-x;
+}
+.conWidth {
+	width: 990px;
+	height: 105px;
+	margin: 0 auto;
+	position: relative;
+}
+.conWidth .logo {
+	float: left;
+	padding-left: 4px;
+}
+.search {
+	position: absolute;
+	top: 20px;
+	left: 198px;
+}
+.search .text {
+	width: 206px;
+	height: 18px;
+	border: 1px solid #BABEBF;
+	font-size: 14px;
+	color: #999; 
+	line-height: 24px;
+	padding: 3px 0px 3px 6px;
+}
+#skin {
+	float:right;
+	margin: 14px 20px 0 0;
+}
+#skin li {
+	float: left;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	margin-right: 5px;
+	cursor: pointer;
+	text-indent: -999px;
+}
+#skin_0 { background: url(../images/theme.gif) no-repeat;}
+#skin_1 { background: url(../images/theme.gif) no-repeat -20px 0px;}
+#skin_2 { background: url(../images/theme.gif) no-repeat -40px 0px;}
+#skin_3 { background: url(../images/theme.gif) no-repeat -60px 0px;}
+#skin_4 { background: url(../images/theme.gif) no-repeat -80px 0px;}
+#skin_5 { background: url(../images/theme.gif) no-repeat -100px 0px;}
+#skin_0.selected { background: url(../images/theme.gif) no-repeat 0 -15px;}
+#skin_1.selected { background: url(../images/theme.gif) no-repeat -20px -15px;}
+#skin_2.selected { background: url(../images/theme.gif) no-repeat -40px -15px;}
+#skin_3.selected { background: url(../images/theme.gif) no-repeat -60px -15px;}
+#skin_4.selected { background: url(../images/theme.gif) no-repeat -80px -15px;}
+#skin_5.selected { background: url(../images/theme.gif) no-repeat -100px -15px;}
+
+#nav {
+	width: 972px;
+	height: 37px;
+	position: absolute;
+	top: 68px;
+	left: 0px;
+	background: #4A4A4A;
+	padding-left: 18px;
+}
+.nav li {
+	float: left;
+	width: 60px;
+	line-height: 37px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	z-index: 2;
+}
+.nav .shoeBox { width: 90px;}
+.nav a {color: #fff;}
+
+.jnNav {
+	width: 474px;
+	border: 1px solid #B1B1B1;
+	border-top: none;
+	background: #fff;
+	position: absolute;
+	display: none;
+	z-index: 2;
+}
+.jnNav dl {
+	border-top: 1px dashed #C4C4C4;
+	margin: 5px 10px;
+	overflow: hidden;
+}
+.jnNav dl.fore { 
+	border-top: none;
+}
+.jnNav dt {
+	float: left;
+	width: 76px;
+	line-height: 16px;
+	padding: 4px;
+	font-size: 12px;
+}
+.jnNav dt a {color: #000;}
+.jnNav dd {
+	float: left;
+	width: 364px;
+}
+.jnNav dd em {
+	float: left;
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 5px 0px;
+	padding: 0px 8px;
+	border-right: 1px solid #ccc;
+}
+.jnNav dd a { color: #666;}
+.jnNav dd a:hover { color: #CC2424;}
+
+#content {
+	width: 990px;
+	margin: 10px auto 20px;
+}
+#left {
+	width: 186px;
+	float: left;
+}
+#left h2 {
+	/*width: 186px;*/
+	height: 30px;
+	line-height: 30px;
+	background: #6E6E6E;
+	color: #fff;
+	text-indent: 10px;
+}
+#jnCategory {
+	border: 1px solid #6E6E6E;
+	border-top: none;
+	padding: 10px;
+}
+#jnCategory h3 {
+	border-bottom: 1px solid #EEE;
+	padding-bottom: 3px;
+}
+#jnCategory li {
+	float: left;
+	width: 82px;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+}
+#jnCategory li a { color: #444;}
+#jnCategory li a:hover { color: #007CCF; text-decoration: none;}
+#jnCategory li a.prompted { color: #F9044E;}
+#jnCategory li .chos {
+	background: url(../images/hot.gif) no-repeat;
+	width: 21px;
+	height: 16px;
+	position: absolute;
+}
+
+#right {
+	width: 792px;
+	float: right;
+}
+#jnFormer {}
+#jnImgScroll {
+	width: 550px;
+	height: 321px;
+	float: left;
+	position: relative;
+}
+.jnImgScroll {
+	display: block;
+	width: 550px;
+	height: 321px;
+	overflow: hidden;
+	z-index: 1;
+}
+.jnImgScroll img { position: absolute; top: 0px; left: 0px;}
+#jnImgScroll div {
+	position: absolute;
+	bottom: 0px;
+	z-index: 2;
+}
+#jnImgScroll div a {
+	float: left;
+	display: block;
+	width: 79px;
+	height: 32px;
+	text-align: center;
+	background: #444;
+	padding: 5px 15px;
+	color: #fff;
+	margin-right: 1px;
+	z-index: 1000;
+}
+#jnImgScroll div a.last { width: 80px; margin-right: 0px;}
+#jnImgScroll div a:hover { text-decoration: none;}
+#jnImgScroll div em {
+	float: left;
+	width: 79px;
+	height: 16px;
+}
+#jnImgScroll div a.chos {
+	background: #37A7D7 url(../images/adindex.gif) no-repeat center 39px;
+}
+
+#jnNotice {
+	width: 230px;
+	height: 321px;
+	float: right;
+}
+.imgMiaosha {
+	display: block;
+	width: 230px;
+	height: 176px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+/*transition表示的是css3元素过渡*/
+.imgMiaosha img {
+	-webkit-transition: 2s all;
+	-moz-transition: 2s all;
+	-o-transition: 2s all;
+	transition: 2s all;
+}
+/*此图片应用css3 2D转换 rotate(angle)表示的是定义2D旋转角度*/
+.imgMiaosha:hover img {
+	-webkit-transform: rotate(720deg);
+	-moz-transform: rotate(720deg);
+	-o-transform: rotate(720deg);
+	transform: rotate(720deg);
+}
+#jnNotice h3 {
+	height: 22px;
+	line-height: 22px;
+	text-indent: 10px;
+	border: 1px solid #DFDFDF;
+}
+#jnNotice ul {
+	height: 104px;
+	padding: 6px 0 0 10px;
+	border: 1px solid #DFDFDF;
+	border-top: none;
+}
+#jnNotice ul li {
+	margin-bottom: 2px;
+}
+#jnNotice ul a { color: #666;}
+#jnNotice ul a:hover { text-decoration: none; color: #007CCF; }
+#toolTip {
+	position: absolute;
+	border: 1px solid #333;
+	color: #333;
+	background: #f7f5d1;
+	padding: 0 5px;
+	display: none;
+}
+
+#jnBrand {
+	float: left;
+	width: 792px;
+	/*height: 230px;*/
+	margin-top: 15px;
+	position: relative;
+}
+#jnBrandTab {
+	width: 792px;
+	height: 29px;
+	border-bottom: 1px solid #E4E4E4;
+	position: relative;
+}
+#jnBrandTab h3 {
+	width: 100px;
+	height: 29px;
+	line-height: 29px;
+}
+#jnBrandTab ul {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+#jnBrandTab li {
+	float: left;
+	margin-right: 10px;
+}
+#jnBrandTab li a {
+	display: inline-block;
+	height: 20px;
+	padding: 0px 10px;
+	background: #E4E4E4;
+	color: #000;
+}
+#jnBrandTab li.choice {
+	background: url(../images/chos.gif) no-repeat center bottom;
+	padding-bottom: 3px;
+}
+#jnBrandTab li.choice a {
+	color: #fff;
+	background: #FA5889;
+}
+#jnBrandContent {
+	width: 778px;
+	height: 194px;
+	margin: 10px 7px 0;
+	overflow: hidden;
+	position: relative;
+}
+.jnBrandList {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.jnBrandList li {
+	float: left;
+	margin-right: 14px;
+}
+.jnBrandList li.brandShoe { margin-right: 0px;}
+.jnBrandList .shoesBox {
+	display: block;
+	width: 184px;
+	height: 164px;
+}
+.jnBrandList span {
+	display: block;
+	width: 184px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #EFEFEF;
+	font-size: 14px;
+}
+.jnBrandList span a { color: #666;}
+.jnBrandList span a:hover { color: #007CCF; text-decoration: none;}
+
+#footer {
+	width: 500px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	margin: 0 auto;
+}
